@@ -1,0 +1,353 @@
+{
+ "evaluation": [
+  {
+   "model": "base rate",
+   "auc_stall": 0.5,
+   "auc_stall_dollar_weighted": 0.5,
+   "ap_stall": 0.3773,
+   "brier_stall": 0.2381,
+   "mae_closure": 0.372,
+   "actual_unspent_B": 26.929,
+   "predicted_unspent_B": 26.372,
+   "dollar_error_pct": -2.07,
+   "top10pct_capture_of_stuck_dollars": 0.8066
+  },
+  {
+   "model": "persistence (last-year pace)",
+   "auc_stall": 0.5839,
+   "auc_stall_dollar_weighted": 0.6874,
+   "ap_stall": 0.4332,
+   "brier_stall": 0.3995,
+   "mae_closure": 0.4216,
+   "actual_unspent_B": 26.929,
+   "predicted_unspent_B": 40.448,
+   "dollar_error_pct": 50.2,
+   "top10pct_capture_of_stuck_dollars": 0.7686
+  },
+  {
+   "model": "text only (TF-IDF ridge)",
+   "auc_stall": 0.594,
+   "auc_stall_dollar_weighted": 0.6194,
+   "ap_stall": 0.466,
+   "brier_stall": 0.2353,
+   "mae_closure": 0.3602,
+   "actual_unspent_B": 26.929,
+   "predicted_unspent_B": 27.532,
+   "dollar_error_pct": 2.24,
+   "top10pct_capture_of_stuck_dollars": 0.8058
+  },
+  {
+   "model": "GBM, no text",
+   "auc_stall": 0.6647,
+   "auc_stall_dollar_weighted": 0.7588,
+   "ap_stall": 0.5489,
+   "brier_stall": 0.2223,
+   "mae_closure": 0.3331,
+   "actual_unspent_B": 26.929,
+   "predicted_unspent_B": 31.696,
+   "dollar_error_pct": 17.7,
+   "top10pct_capture_of_stuck_dollars": 0.8109
+  },
+  {
+   "model": "GBM + text (Stall Radar)",
+   "auc_stall": 0.6653,
+   "auc_stall_dollar_weighted": 0.7543,
+   "ap_stall": 0.5447,
+   "brier_stall": 0.2228,
+   "mae_closure": 0.3333,
+   "actual_unspent_B": 26.929,
+   "predicted_unspent_B": 31.772,
+   "dollar_error_pct": 17.98,
+   "top10pct_capture_of_stuck_dollars": 0.8105
+  }
+ ],
+ "calibration": [
+  {
+   "dec": 0,
+   "pred": 0.1874,
+   "actual": 0.3609,
+   "n": 3785
+  },
+  {
+   "dec": 1,
+   "pred": 0.3323,
+   "actual": 0.4733,
+   "n": 3784
+  },
+  {
+   "dec": 2,
+   "pred": 0.43,
+   "actual": 0.5326,
+   "n": 3784
+  },
+  {
+   "dec": 3,
+   "pred": 0.5085,
+   "actual": 0.5811,
+   "n": 3784
+  },
+  {
+   "dec": 4,
+   "pred": 0.5759,
+   "actual": 0.603,
+   "n": 3784
+  },
+  {
+   "dec": 5,
+   "pred": 0.6354,
+   "actual": 0.6445,
+   "n": 3784
+  },
+  {
+   "dec": 6,
+   "pred": 0.6897,
+   "actual": 0.6729,
+   "n": 3784
+  },
+  {
+   "dec": 7,
+   "pred": 0.744,
+   "actual": 0.7028,
+   "n": 3784
+  },
+  {
+   "dec": 8,
+   "pred": 0.803,
+   "actual": 0.7377,
+   "n": 3784
+  },
+  {
+   "dec": 9,
+   "pred": 0.8786,
+   "actual": 0.7785,
+   "n": 3785
+  }
+ ],
+ "slices": [
+  {
+   "slice": "tier=1",
+   "n": 15436,
+   "auc": 0.686,
+   "actual_closure": 0.571,
+   "pred_closure": 0.533
+  },
+  {
+   "slice": "tier=2",
+   "n": 11067,
+   "auc": 0.656,
+   "actual_closure": 0.616,
+   "pred_closure": 0.604
+  },
+  {
+   "slice": "tier=5",
+   "n": 11339,
+   "auc": 0.625,
+   "actual_closure": 0.652,
+   "pred_closure": 0.615
+  },
+  {
+   "slice": "rtype=Local Government",
+   "n": 29029,
+   "auc": 0.647,
+   "actual_closure": 0.632,
+   "pred_closure": 0.607
+  },
+  {
+   "slice": "rtype=State/DC",
+   "n": 8617,
+   "auc": 0.692,
+   "actual_closure": 0.532,
+   "pred_closure": 0.484
+  },
+  {
+   "slice": "ec_group=1",
+   "n": 3258,
+   "auc": 0.674,
+   "actual_closure": 0.613,
+   "pred_closure": 0.612
+  },
+  {
+   "slice": "ec_group=2",
+   "n": 6048,
+   "auc": 0.669,
+   "actual_closure": 0.619,
+   "pred_closure": 0.607
+  },
+  {
+   "slice": "ec_group=3",
+   "n": 1140,
+   "auc": 0.637,
+   "actual_closure": 0.62,
+   "pred_closure": 0.619
+  },
+  {
+   "slice": "ec_group=5",
+   "n": 8747,
+   "auc": 0.669,
+   "actual_closure": 0.544,
+   "pred_closure": 0.468
+  },
+  {
+   "slice": "ec_group=6",
+   "n": 16814,
+   "auc": 0.629,
+   "actual_closure": 0.651,
+   "pred_closure": 0.629
+  },
+  {
+   "slice": "ec_group=7",
+   "n": 1449,
+   "auc": 0.719,
+   "actual_closure": 0.441,
+   "pred_closure": 0.457
+  }
+ ],
+ "importance": {
+  "text_score": 0.1087,
+  "q_vel_ratio": 0.1075,
+  "state": 0.1046,
+  "vel_ratio": 0.0863,
+  "ec": 0.0673,
+  "desc_len": 0.0514,
+  "log_gap": 0.0497,
+  "log_obl": 0.0478,
+  "share_of_recipient_gap": 0.0427,
+  "spend_ratio": 0.0422,
+  "r_spend_ratio": 0.0394,
+  "log_alloc": 0.0394,
+  "r_vel_ratio": 0.039,
+  "r_log_gap": 0.0333,
+  "obl_growth": 0.03,
+  "r_n": 0.0282,
+  "status": 0.0253,
+  "r_n_open": 0.0213,
+  "status_prev": 0.0076,
+  "cap_type": 0.0073
+ },
+ "text_terms_train_only": {
+  "stall": [
+   "pdc",
+   "town office",
+   "station building",
+   "obligation",
+   "deployment",
+   "tdec",
+   "quarantine",
+   "nursing",
+   "proposed",
+   "asset",
+   "utility district",
+   "vaccine",
+   "did",
+   "funds use",
+   "terminus",
+   "services water",
+   "lincoln county",
+   "appointments",
+   "linden",
+   "repair repair",
+   "joliet",
+   "oregon",
+   "include water",
+   "source",
+   "walking trail"
+  ],
+  "spend": [
+   "2024",
+   "deputy",
+   "municipality",
+   "11",
+   "repair project",
+   "used replace",
+   "availability",
+   "replacement revenue",
+   "new building",
+   "funds purchase",
+   "poverty",
+   "collect",
+   "street sewer",
+   "easier",
+   "roadway improvements",
+   "rural water",
+   "providing",
+   "clean drinking",
+   "la",
+   "2023 2024",
+   "ward",
+   "detection",
+   "best",
+   "administration building",
+   "pandemic"
+  ]
+ },
+ "text_terms_production": {
+  "stall": [
+   "pdc",
+   "tennessee",
+   "station building",
+   "tdot",
+   "utility district",
+   "north miami",
+   "taking",
+   "great grant",
+   "county commission",
+   "estimates",
+   "management plan",
+   "obligation",
+   "improve stormwater",
+   "asset",
+   "repair repair",
+   "safety vehicle",
+   "gps",
+   "broadband",
+   "services public",
+   "quarantine",
+   "2026",
+   "water loss",
+   "source",
+   "coal",
+   "village board"
+  ],
+  "spend": [
+   "2024",
+   "enhancement grant",
+   "2025",
+   "economic enhancement",
+   "replacement funding",
+   "transporting",
+   "grant fund",
+   "fy25",
+   "tower construction",
+   "crg",
+   "easier",
+   "used support",
+   "funds purchase",
+   "broadband feasibility",
+   "said",
+   "help prevent",
+   "columbarium",
+   "stadium",
+   "various city",
+   "panel",
+   "town use",
+   "dol",
+   "funds provision",
+   "area pct",
+   "collect"
+  ]
+ },
+ "national": {
+  "open_projects": 23295,
+  "open_gap_usd": 26326805334.64,
+  "at_risk_usd_model": 14286444623.00768,
+  "drift_correction": 0.8467619168646998,
+  "at_risk_usd": 12097217234.159369,
+  "at_risk_90ci_usd": [
+   11676120704.270535,
+   12486322177.629198
+  ],
+  "recipients_with_open_projects": 4726
+ },
+ "n_train": 37222,
+ "n_test": 37842
+}

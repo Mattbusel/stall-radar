@@ -1,0 +1,16 @@
+{
+  "name": "stall-radar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stall Radar: forecasts which ARPA SLFRF dollars will go unspent by the Dec 31 2026 deadline",
+  "license": "MIT",
+  "scripts": {
+    "serve": "python -m http.server 4088 --directory web",
+    "shots": "node scripts/shots.js",
+    "record": "node scripts/record.js"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

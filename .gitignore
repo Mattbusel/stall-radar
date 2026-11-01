@@ -1,0 +1,9 @@
+node_modules/
+data/raw/
+data/parquet/
+data/panels/
+data/model/scored.parquet
+demo-out/
+__pycache__/
+.vercel
+*.log
